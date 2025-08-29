@@ -2,11 +2,14 @@
 using namespace std;
 
 void countDigit(int n){
-    int count=0;
-    while(n>0){
-        n=n/10;
-        count++;
-    }
+    // int count=0;
+    // while(n>0){
+    //     n=n/10;
+    //     count++;
+    // }
+    // cout<<count;
+
+    int count=(int)(log10(n)+1);
     cout<<count;
 }
 
