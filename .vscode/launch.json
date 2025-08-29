@@ -2,18 +2,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "C++ Run Active File",
+            "name": "Run C++ in Terminal",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
-            "externalConsole": true,
+            "externalConsole": false,   // 👈 this is the key
             "MIMode": "gdb",
             "miDebuggerPath": "gdb.exe",
-            "preLaunchTask": "C/C++: g++.exe build active file"
+            "preLaunchTask": "build active file"
         }
     ]
 }
