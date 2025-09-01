@@ -23,10 +23,21 @@ void EffiFindGCD(int n1,int n2){
         }
 }
 
+//More Faster using euclidean algorithm
+// TC=O(log(min(a,b)))
+void EucliFindGCD(int n1,int n2){
+    while(n1>0 && n2>0){
+        if(n1>n2)   n1=n1%n2;
+        else        n2=n2%n1;
+    }
+    if(n1==0)   cout<<n2<<endl;
+    else        cout<<n1<<endl;
+}
+
 
 int main(){
 int n1,n2;
 cin>>n1>>n2;
-FindGCD(n1,n2);
+EucliFindGCD(n1,n2);
 
 }
