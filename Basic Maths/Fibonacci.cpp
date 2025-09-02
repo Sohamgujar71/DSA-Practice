@@ -17,7 +17,7 @@ using namespace std;
 //     }
 // }
 
-int f(int n){       //multiple recursions
+int f(int n){       //multiple recursions TC=O(2^n)
     if(n<=1){
         return n;
     }else{
